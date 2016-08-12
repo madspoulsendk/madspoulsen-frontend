@@ -1,0 +1,299 @@
+html,
+body,
+section {
+  height: 100vh;
+}
+
+body {
+  font-family: serif;
+  font-size: 1em;
+  line-height: 150%;
+  text-align: center;
+  width: 100%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  position: fixed;
+}
+
+body.lock-position {
+height: 100%;
+overflow: hidden;
+width: 100%;
+position: fixed;
+}
+
+span1 {
+  display: flex;
+  flex-direction: column;
+  /* use: 'row' for text from top to bottom */
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0 0 0.15em 0;
+  color: #fff;
+  font-weight: 100;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  /* This line makes FlexBox responsive */
+}
+
+@media (max-width: 767px;) { 
+.right {
+  display: none;
+}
+}
+
+.footer {
+  font-size: 11px;
+  position: absolute; 
+  bottom: 2em;
+  top:auto;
+  left: 2em;
+  right: auto;
+  z-index: 10000000000000;
+  float:left;
+  color: rgba(255,255,255,.7);
+}
+
+.footer a {
+  color: rgba(255,255,255,.7);
+}
+
+.footer a:hover {
+  color: rgba(255,255,255,.95);
+}
+
+@media (min-width: 900px) { 
+.footer {
+  padding-left: 2.5em!important;
+}
+}
+
+.text {
+  /*background-color: #F7D246;*/
+  flex: 1 0 50%;
+  min-width: 300px;
+  /* Fill in min-width for your halfscreens, functions as 'breakpoint' for flex-wrap: wrap; */
+  box-sizing: border-box;
+  padding: 3em;
+  min-height: 50vh;
+  text-align: left;
+  z-index: 12310230123;
+}
+
+@media (max-width: 900px) { 
+  .text {
+  padding-left:1.5em;
+  }
+}
+
+@media (min-height: 400px) { 
+  .text {
+    flex: 1 0 30%;
+  }
+  .image {
+    flex: 1 0 70%;
+  }
+}
+
+@media (min-height: 900px) { 
+  .text {
+    flex: 1 0 10%;
+  }
+  .image {
+    flex: 1 0 90%;
+  }
+}
+
+@media (max-width: 950px){
+  .text {
+    width:100%!important;
+    height: 100%!important;
+    z-index: 91231023012030;
+    position: absolute;
+  }
+  }
+
+
+blockquote {
+  quotes: '“' '”';
+}
+
+blockquote:before {
+  content: '“';
+  content: open-quote;
+}
+
+blockquote:after {
+  content: '”';
+  content: close-quote;
+}
+
+.image {
+  background-image: url('/images/design-n-1.jpg');
+  background-color: #FFF;
+  background-position: 50% 0%;
+  background-size: cover;
+  flex: 1 0 50%;
+  min-width: 300px;
+  box-sizing: border-box;
+  padding: 0;
+  min-height: 50vh;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.center {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px; /* margin is -0.5 * dimension */
+    margin-top: -200px; 
+    z-index: 1000;
+    text-align: center;
+}​
+
+video,
+source {
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
+.loaded .ytplayer-container {
+  display: block;
+}
+
+.loaded .placeholder-image {
+  opacity: 0;
+}
+
+.ytplayer-container {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  min-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.placeholder-image {
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: none;
+}
+
+.ytplayer-shield {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px; 
+}
+
+.ytplayer-player {
+  position: absolute;
+}
+
+
+
+@-webkit-keyframes fadeout { from { opacity:1; opacity: 1\9; /* IE9 only */ } to { opacity:0; } }
+@-moz-keyframes fadeout { from { opacity:1; opacity: 1\9; /* IE9 only */ } to { opacity:0; } }
+@keyframes fadeout { from { opacity:1; opacity: 1\9; /* IE9 only */ } to { opacity:0; } }
+
+.fade-in {
+    opacity:1;  /* make things invisible upon start */
+    -webkit-animation:fadeout ease-in 1;  /* call our keyframe named fadeout, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeout ease-in 1;
+    animation:fadeout ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 3s;
+-moz-animation-delay: 3s;
+animation-delay: 3s;
+}
+
+/*---make a basic box ---*/
+.box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inherit;
+    right: 0;
+    left: 25%;
+    z-index: 99999191;
+}
+
+@media (max-height: 500px) { 
+  .box{
+  left: auto;
+  width: 60%;
+  }
+}
+
+
+@media (min-height: 400px) { 
+  .box{
+  left: auto;
+  width: 80%;
+  }
+}
+
+
+@media (min-height: 600px) { 
+  .box{
+  left: auto;
+  width: 100%;
+  }
+}
+

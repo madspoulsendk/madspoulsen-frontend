@@ -1,0 +1,129 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1, .h1 {
+  color: #fff;
+}
+
+.gradiant {
+background: #453550; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #453550 , #2C1F33); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #453550 , #2C1F33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+z-index: 100;
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0.97;
+}
+
+@media (max-width: 768px) {
+  .gradiant {
+  background: #2C1F33;
+  }
+} 
+
+.center {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px; /* margin is -0.5 * dimension */
+    margin-top: -200px; 
+    z-index: 1000;
+    text-align: center;
+}​
+
+body > div.gradiant > div > button {
+    border-radius: 15px!important;
+    color: #fff;
+}
+
+body > div.gradiant > div > a > button:hover {
+color: red;
+}
+
+button:focus {outline:0;}
+
+.container {
+  position: relative
+}
+
+.background-video {
+  background-position: top center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .background-video {
+  display:none;
+   }
+} 
+
+video,
+source {
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
+.loaded .ytplayer-container {
+  display: block;
+}
+
+.loaded .placeholder-image {
+  opacity: 0;
+}
+
+.ytplayer-container {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  min-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.placeholder-image {
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: none;
+}
+
+.ytplayer-shield {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.ytplayer-player {
+  position: absolute;
+}
+
+.container {
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .9);
+  padding: 0 30px 0 30px;
+  margin: 30px auto;
+}
