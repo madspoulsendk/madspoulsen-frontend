@@ -15,7 +15,16 @@ p{
 	margin:0 0 20px;
 	text-align: center;
 }
-
+.lead {
+		line-height: 55px;
+		font-size: 30px;
+}
+@media (max-width: 1000px) {
+.lead {
+		line-height: 38px;
+		font-size: 18px;
+}
+}
 .wrap{
 	margin-left: 0;
 	height: 50px;
@@ -23,18 +32,27 @@ p{
 
 .type-wrap{
 	color: #fff;
-	font-size: 21px;
+	font-size: 40px;
 	height: 50px;
 	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
-	line-height: 30px;
+	font-weight: 500;
+	line-height: 60px;
+	width: 150px;
+}
+
+@media (max-width: 600px) {
+	.type-wrap{
+		font-size: 21px;
+		line-height: 30px;
+		font-weight: 500;
+	}
 }
 
 @media (min-width: 1500px) {
 	.type-wrap{
-		font-size: 28px;
-		line-height: 36px;
-		font-weight: 100;
+		font-size: 40px;
+		line-height: 60px;
+		font-weight: 500;
 	}
 }
 

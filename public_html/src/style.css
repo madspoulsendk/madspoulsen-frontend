@@ -1,7 +1,7 @@
 html,
 body,
 section {
-  height: 100vh;
+  height: auto;
 }
 
 body {
@@ -10,16 +10,7 @@ body {
   line-height: 150%;
   text-align: center;
   width: 100%;
-  overflow-x:hidden;
-  overflow-y:hidden;
-  position: fixed;
-}
-
-body.lock-position {
-height: 100%;
-overflow: hidden;
-width: 100%;
-position: fixed;
+  background-color: #ECECEC;
 }
 
 span1 {
@@ -30,11 +21,40 @@ span1 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 1.3em;
   margin: 0 0 0.15em 0;
   color: #fff;
   font-weight: 100;
+  margin-top: 0;
+  padding-top: 0;
 }
+
+.profile-text-box {
+  padding: 5em;
+  text-align: left;
+}
+@media (max-width: 767px) { 
+  .profile-text-box {
+  padding: 2em;
+}
+}
+
+.profile-box {
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;  
+  background:url(/images/MP-Profile.jpg) 
+  no-repeat center center; 
+  background-size: cover;
+  display: flex;
+}
+@media (max-width: 767px) { 
+  .profile-box {
+  height: 300px;
+}
+}
+
 
 .container1 {
   display: flex;
@@ -183,14 +203,20 @@ source {
 
 .ytplayer-container {
   bottom: 0;
-  height: 100%;
+  height: 700px;
   left: 0;
   min-width: 100%;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
   z-index: 0;
+}
+
+@media (max-width: 600px) { 
+  .ytplayer-container {
+    height: 600px;
+  }
 }
 
 .placeholder-image {
@@ -205,26 +231,55 @@ source {
 }
 
 .ytplayer-shield {
-  height: 100%;
+  height: 700px;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  opacity: 0.8;
+  background: -webkit-linear-gradient(left top, black, transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, black, transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, black, transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, black, transparent); /* Standard syntax */
+}
+
+@media (max-width: 600px) { 
+.ytplayer-shield {
+  background: rgb(239, 85, 77);
+  opacity: 1;
+  height: 600px;
+}
+}
+
+.text-overlay {
+  position: absolute;
   z-index: 2;
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(255,255,255,.35), rgba(255,255,255,.35) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  background-size: 3px 3px; 
+  box-sizing: border-box;
+  padding: 3em;
+  min-height: 50vh;
+  text-align: left;
+  flex: 1 0 50%;
+  min-width: 300px;
+  left: 10em;
+  top:9em;
+  right: auto;
+}
+@media (max-width: 1000px) { 
+  .text-overlay {
+  left:2em;
+  right: auto;
+}
+@media (max-width: 600px) { 
+  .text-overlay {
+  left:-1.5em;
+  right: auto;
+  top:6em;
+}
 }
 
 .ytplayer-player {
   position: absolute;
 }
-
-
 
 @-webkit-keyframes fadeout { from { opacity:1; opacity: 1\9; /* IE9 only */ } to { opacity:0; } }
 @-moz-keyframes fadeout { from { opacity:1; opacity: 1\9; /* IE9 only */ } to { opacity:0; } }
