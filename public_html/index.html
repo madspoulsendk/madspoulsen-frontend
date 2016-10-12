@@ -1,275 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Interaktiv legeplads brugt til CV  og Portfolio af Mads Poulsen, som er grafisk designer fra Midtjylland med speciale i logo, web og identitetsdesign.">
-    <meta name="author" content="Mads Poulsen">
     <title>Mads Poulsen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
-    <!-- Twitter Boostrap for Demo -->
-    <link rel="stylesheet" href="http:////maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <!-- styles for video player -->
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="button-css.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="/danish/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/danish/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/danish/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/danish/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/danish/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/danish/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/danish/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/danish/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/danish/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/danish/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/danish/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/danish/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/danish/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/danish/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/danish/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Kreativ grafisk designer - Mads Poulsen" />
-    <meta property="og:type" content="Hjemmeside" />
-    <meta property="og:url" content="http://madspoulsen.dk/" />
-    <meta property="og:image" content="http://www.madspoulsen.dk/danish/img/header-v2.jpg" />
-    <meta property="og:site_name" content="Mads Poulsen" />
-    <meta property="og:description" content="Interaktiv legeplads brugt til CV  og Portfolio af Mads Poulsen, som er grafisk designer fra Midtjylland med speciale i logo, web og identitetsdesign." />
-</head>
-<meta charset="UTF-8">
-<!-- Get jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/typed.js" type="text/javascript"></script>
-<script>
-$(function() {
-
-    $("#typed").typed({
-        // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-        stringsElement: $('#typed-strings'),
-        typeSpeed: 30,
-        backDelay: 500,
-        loop: false,
-        contentType: 'html', // or text
-        // defaults to false for infinite loop
-        loopCount: false,
-        callback: function() {
-            foo();
-        },
-        resetCallback: function() {
-            newTyped();
-        }
-    });
-
-    $(".reset").click(function() {
-        $("#typed").typed('reset');
-    });
-
-});
-
-function newTyped() { /* A new typed object */ }
-
-function foo() {
-    console.log("Callback");
-}
-</script>
-<link href="main.css" rel="stylesheet" />
-<style>
-/* code for animated blinking cursor */
-
-.typed-cursor {
-    opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-
-@-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-</style>
-</head>
-
-<body>
-    <span1 class="text-overlay" id="controls-wrapper">
-        <h1>Mads Poulsen</h1>
-        <hr style="margin-top: 1.5em;margin-bottom: 3em;border: 0;border-top: 3px solid #fff;width: 60px;">
-        <div class="wrap">
-            <div class="type-wrap">
-                <div id="typed-strings">
-                    <!--<p>Welcome to my interactive<br/>playground</p>-->
-                    <p>Welcome.</p>
-                    <p>I'm a creative graphic designer</p>
-                    <p>Currently working at Co3<br/>- Former Print Designer at Bestseller</p>
-                    <p>Let me know if you want to grab<br/>a cup of fresh brewed coffee.</p>
-                    <p><a href="mailto:mail@madspoulsen.dk" style="color: #fff!important;">mail@madspoulsen.dk</a><br/><span style="color: #fff!important;">+45 6133 9581</span></p>
-                </div>
-                <span id="typed" style="white-space:pre;"></span>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-        <a href="https://www.linkedin.com/in/madspoulsendk" target="_blank" style="z-index: 1000; width: 0;">
-            <button>Contact me</button>
-        </a>
-    </span1>
-    <div class="box fade-in three">
-    </div>
-    <div id="background-video" class="background-video">
-        <img src="images/placeholder.jpg" alt="" class="placeholder-image">
-    </div>
-    </div>
-    <section style="margin-top:4em; margin-bottom: -64px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-top:4em; margin-bottom:6em">
-                    <p class="lead">
-                        This is my interactive playground which means it will always be changing and you might stumble upon an error now and then.</p>
-                </div>
-            </div>
-            <div class="row" style="flex-wrap: wrap; height: 100%; display:flex;">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-lg-7 col-lg-offset-1" style="background:#fff;display:flex;">
-                    <span class="profile-text-box">
-                <h3>To make a long story short</h3><br/>
-                <p style="text-align:left">My name is Mads and I'm a 25 year old Graphic Designer. I live in a small town called Ikast with my girlfriend.<br/><br/>Iʻm a perky and comitted young guy who loves challenges. Iʻm passionate, enthusiastic and focused.</p></span>
-                </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-lg-3 profile-box">&nbsp;
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section style="background:#fff; margin-top:4em; padding-top:4em; height: 900px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-10 col-sm-6 col-lg-6 right-padding-text">
-                    <h3 style="text-align: left;">Life. Style. Elegance.</h3><br/>
-                    <p style="text-align: left;">Cras elementum, orci elementum eleifend blandit, libero mauris molestie libero, quis rhoncus tellus neque eu orci.</p><br/>
-                    <h4 style="text-align: left;">Sports</h4>
-                    <p style="text-align: left;">Cras elementum, orci elementum eleifend blandit, libero mauris molestie libero, quis rhoncus tellus neque eu orci.</p><br/>
-                    <h4 style="text-align: left;">Drums & Music</h4>
-                    <p style="text-align: left;">Cras elementum, orci elementum eleifend blandit, libero mauris molestie libero, quis rhoncus tellus neque eu orci.</p>
-                </div>
-                <div class="col-xs-10 col-sm-6 col-lg-6">
-                    <div class="fadein">
-                        <img id="f4" src="images/4.jpg">
-                        <img id="f3" src="images/3.jpg">
-                        <img id="f2" src="images/2.jpg">
-                        <img id="f1" src="images/1.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ADD Jquery Video Background -->
-    <script src="src/jquery.youtubebackground.js"></script>
+    <link rel="stylesheet" media="screen" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interaktiv legeplads brugt til CV  og Portfolio af Mads Poulsen, som er grafisk designer fra Midtjylland med speciale i logo, web og identitetsdesign.">
+    <meta name="robots" content="all">
+    <script src="http://use.typekit.net/vzq4ipz.js"></script>
     <script>
-    jQuery(function($) {
-
-        $('#module-video').YTPlayer({
-            fitToBackground: false,
-            videoId: 'XddmFA8GS_I',
-            pauseOnScroll: false,
-            playerVars: {
-                modestbranding: 0,
-                autoplay: 1,
-                controls: 1,
-                showinfo: 0,
-                branding: 0,
-                rel: 0,
-                autohide: 0
-            }
-        });
-
-        $('#background-video').YTPlayer({
-            fitToBackground: true,
-            videoId: 'XddmFA8GS_I',
-            pauseOnScroll: true,
-            callback: function() {
-                videoCallbackEvents();
-            }
-        });
-
-        var videoCallbackEvents = function() {
-            var player = $('#background-video').data('ytPlayer').player;
-
-            player.addEventListener('onStateChange', function(event) {
-                console.log("Player State Change", event);
-
-                // OnStateChange Data
-                if (event.data === 0) {
-                    console.log('video ended');
-                } else if (event.data === 2) {
-                    console.log('paused');
-                }
-            });
-        }
-    });
+    try {
+        Typekit.load();
+    } catch (e) {}
     </script>
+    <!--[if lt IE 9]>
+  <script src="script/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body id="css-mp-garden">
+    <div class="page-wrapper">
+        <section class="intro" id="mp-intro">
+            <header role="banner">
+                <h1>Mads Poulsen</h1>
+                <h2>Welcome to my interactive playground</h2>
+            </header>
+            <div class="summary" id="mp-summary" role="article">
+                <p>My name is Mads and I'm a 25 year old Web Designer. I live in a small town called Ikast with my girlfriend. In my sparetime I use quite some time roasting, brewing and drinking coffee.
+                    <br/>
+                    <br/> I focus on living in the present and try to improve myself on a mental level every day. Therefore I love long-distance running because the automatic focus on breathing gives me a meditation-like state. With that being said I always go the extra mile to win.</p>
+            </div>
+            <div class="preamble" id="mp-preamble" role="article">
+                <h3>Personally...</h3>
+                <p>I‘m a perky and comitted young guy who loves challenges. I‘m passionate, enthusiastic and focused. I‘m willing to learn and I have the right attitude. I am disciplined, independent and hard working.
+                    <br/>
+                    <br/>That being said I‘m a team player. I bring laugther and joy to the team and priorities my relationship with colleague both duing and after work hours.</p>
+                <p>Besides being a talented graphic designer and a good colleague, his passion for design and creative work is inspiring. He wants to make the best solution no matter what it takes.
+                    <br/>
+                    <br/><span>- Ulrik Jepsen (BESTSELLER A/S)</span></p>
+            </div>
+        </section>
+        <div class="main supporting" id="mp-supporting" role="main">
+            <div class="explanation" id="mp-explanation" role="article">
+                <h3>To make a long story short</h3>
+                <p>I currently work as a webdesigner at the Danish Web Agency Co3 where my main focus is on consumer conversion behavior and measurable webdesign.
+                    <br/>
+                    <br/> I love working with great User Interface and designs, but more importantly is understanding the customer and their needs. I have great experience with cross-culture communication. Through Bestseller I had daily dialogue with Asian suppliers and at Co3 I work with Danish and other European customers.
+                    <br/>
+                    <br/> I‘m responsible for my own projects which has given me experience within everything from project management to design and communication with both large and small companies.
+                </p>
+            </div>
+            <div class="participation" id="mp-participation" role="article">
+                <h3>My previous job at Outfitters Nation & ADPT.</h3>
+                <p>At Bestseller I worked as a Textile Print Designer for a youth clothing brand. I was responsible for researching and choosing trends and colours for six annual collections, including creating designs. I also took part of presenting the collection to the European sales representives.</p>
+            </div>
+            <div class="benefits" id="mp-benefits" role="article">
+                <h2>"</h2>
+                <p>No one ever said you had to wait to make your mark on the world. No one ever said that adults are the only ones who can change the way people see the world. It's only those who are true to themselves, the ones who dare to be different, who shape the future.</p>
+            </div>
+        </div>
+    </div>
+    </aside>
+    </div>
 </body>
 
 </html>

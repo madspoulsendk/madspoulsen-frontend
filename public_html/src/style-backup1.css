@@ -1,0 +1,800 @@
+html,
+body,
+section {
+    height: auto;
+}
+
+.lead1 {
+    line-height: 50px;
+    font-size: 30px;
+}
+
+@media (min-width: 768px){
+.lead1 {
+    font-size: 21px;
+}
+}
+
+.video-container-ofn-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.video-container {
+    position: relative;
+    top: -270px;
+    left: 80px;
+}
+
+@media (max-width: 1200px) {
+    .video-container {
+        top: -170px;
+        left: 83px;
+    }
+}
+
+@media (max-width: 991px) {
+    .video-container {
+        top: -430px;
+        left: -15px;
+    }
+}
+
+@media (max-width: 760px) {
+    .video-container {
+        display: none;
+    }
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 587px;
+    height: 330px;
+}
+
+@media (max-width: 1200px) {
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        width: 387px;
+        height: 218px;
+    }
+}
+
+@media (max-width: 991px) {
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        width: 625px;
+        height: 352px;
+    }
+}
+
+.topbanner {
+    height: 700px;
+    width: 100%;
+    background-color: #C6CAD5;
+    /*background: url(/images/design-n-3.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: 70% 20%; */
+}
+
+body {
+    line-height: 150%;
+    text-align: center;
+    width: 100%;
+    background-color: #ECECEC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.introduction {
+    flex-wrap: wrap;
+    height: 100%;
+    display: flex;
+    margin-top: 15em;
+}
+
+@media (max-width: 1200px) {
+    .introduction {
+        margin-top: 11em;
+    }
+}
+
+@media (max-width: 991px) {
+    .introduction {
+        margin-top: 25em;
+    }
+}
+
+@media (max-width: 760px) {
+    .introduction {
+        margin-top: 0;
+    }
+}
+
+span1 {
+    display: flex;
+    flex-direction: column;
+    /* use: 'row' for text from top to bottom */
+    justify-content: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+@media (max-width: 760px) {
+    p {
+        line-height: 26px!important;
+    }
+}
+
+h3 {
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 1.3em;
+    margin: 0 0 0.15em 0;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.profile-text-box {
+    padding: 7em 4em 3em 5em;
+    text-align: left;
+}
+
+@media (max-width: 991px) {
+    .profile-text-box {
+        padding: 1em;
+    }
+}
+
+.right-padding-text {
+    padding: 2em 3em;
+    text-align: left;
+}
+
+@media (max-width: 979px) {
+    .right-padding-text {
+        padding: 0 2em;
+    }
+}
+
+.profile-box {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: url(/images/MP-Profile.jpg) no-repeat left center;
+    background-size: cover;
+    display: flex;
+}
+
+@media (min-width: 767px) {
+    .profile-box {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-box {
+        height: 300px;
+    }
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* This line makes FlexBox responsive */
+}
+
+@media (max-width: 767px;
+) {
+    .right {
+        display: none;
+    }
+}
+
+.footer {
+    font-size: 11px;
+    position: absolute;
+    bottom: 2em;
+    top: auto;
+    left: 2em;
+    right: auto;
+    z-index: 10000000000000;
+    float: left;
+    color: rgba(255, 255, 255, .7);
+}
+
+.footer a {
+    color: rgba(255, 255, 255, .7);
+}
+
+.footer a:hover {
+    color: rgba(255, 255, 255, .95);
+}
+
+@media (min-width: 900px) {
+    .footer {
+        padding-left: 2.5em!important;
+    }
+}
+
+.text {
+    /*background-color: #F7D246;*/
+    flex: 1 0 50%;
+    min-width: 300px;
+    /* Fill in min-width for your halfscreens, functions as 'breakpoint' for flex-wrap: wrap; */
+    box-sizing: border-box;
+    padding: 3em;
+    min-height: 50vh;
+    text-align: left;
+    z-index: 12310230123;
+}
+
+@media (max-width: 900px) {
+    .text {
+        padding-left: 1.5em;
+    }
+}
+
+@media (min-height: 400px) {
+    .text {
+        flex: 1 0 30%;
+    }
+    .image {
+        flex: 1 0 70%;
+    }
+}
+
+@media (min-height: 900px) {
+    .text {
+        flex: 1 0 10%;
+    }
+    .image {
+        flex: 1 0 90%;
+    }
+}
+
+@media (max-width: 950px) {
+    .text {
+        width: 100%!important;
+        height: 100%!important;
+        z-index: 91231023012030;
+        position: absolute;
+    }
+}
+
+blockquote {
+    quotes: '“' '”';
+}
+
+blockquote:before {
+    content: '“';
+    content: open-quote;
+}
+
+blockquote:after {
+    content: '”';
+    content: close-quote;
+}
+
+.image {
+    background-image: url('/images/design-n-1.jpg');
+    background-color: #FFF;
+    background-position: 50% 0%;
+    background-size: cover;
+    flex: 1 0 50%;
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 0;
+    min-height: 50vh;
+}
+
+.center {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    /* margin is -0.5 * dimension */
+    margin-top: -200px;
+    z-index: 1000;
+    text-align: center;
+}
+
+​ video,
+source {
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+
+.loaded .ytplayer-container {
+    display: block;
+}
+
+.loaded .placeholder-image {
+    opacity: 0;
+}
+
+.ytplayer-container {
+    bottom: 0;
+    height: 700px;
+    width: 100%;
+    left: 0;
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+@media (max-width: 600px) {
+    .ytplayer-container {
+        height: 600px;
+    }
+}
+
+.placeholder-image {
+    height: 100%;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+.ytplayer-shield {
+    height: 310px;
+    width: 550px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .ytplayer-shield {
+        background: rgb(239, 85, 77);
+        opacity: 1;
+        height: 600px;
+    }
+}
+
+.text-overlay {
+    position: absolute;
+    z-index: 20;
+    box-sizing: border-box;
+    padding: 0;
+    min-height: 50vh;
+    text-align: left;
+    flex: 1 0 50%;
+    min-width: 300px;
+    left: 5em;
+    top: 9em;
+    right: auto;
+}
+
+@media (max-width: 979px) {
+    .text-overlay {
+        left: 1.5em;
+        right: auto;
+        top: 7em;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-overlay {
+        left: 1em;
+        right: auto;
+        top: 4em;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-overlay {
+        left: 1.5em;
+        right: auto;
+        top: 3em;
+    }
+}
+
+.ytplayer-player {
+    position: absolute;
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        opacity: 1;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeout {
+    from {
+        opacity: 1;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    /* make things invisible upon start */
+    -webkit-animation: fadeout ease-in 1;
+    /* call our keyframe named fadeout, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeout ease-in 1;
+    animation: fadeout ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+
+/*---make a basic box ---*/
+
+.box {
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    display: inherit;
+    right: auto;
+    left: 0;
+    z-index: 2;
+    background: black;
+}
+
+@media (max-width: 600px) {
+    .box {
+        display: none;
+    }
+}
+
+.fadein img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    margin: 2em;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.instagram {
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+
+.instagram-pic {
+    position: relative;
+}
+
+.snapchat-pic:hover:before {
+    font-family: FontAwesome;
+    content: "\f2ad";
+    font-size: 50px;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    background: rgba(241, 231, 103, 1);
+    background: -moz-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(241, 231, 103, 1)), color-stop(100%, rgba(252, 207, 70, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: linear-gradient(135deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#fccf46', GradientType=1);
+    padding: 2.61em;
+    color: #FFF;
+    -moz-border-radius: 3px;
+    z-index: 1000
+}
+
+@media (max-width: 1200px) {
+    .snapchat-pic:hover:before {
+        padding: 2.11em;
+        width: 250px;
+    }
+}
+
+@media (max-width: 991px) {
+    .snapchat-pic:hover:before {
+        background: none!important;
+        content: none;
+    }
+}
+
+.instagram-pic2:hover:before {
+    font-family: FontAwesome;
+    content: "\f16d";
+    font-size: 50px;
+    position: absolute;
+    width: 285px;
+    top: 0;
+    left: 300px;
+    white-space: nowrap;
+    background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    -webkit-animation: animation 3.5s linear infinite;
+    -moz-animation: animation 3.5s linear infinite;
+    -ms-animation: animation 3.5s linear infinite;
+    -o-animation: animation 3.5s linear infinite;
+    animation: animation 3.5s linear infinite;
+    padding: 2.61em;
+    color: #FFF;
+    -moz-border-radius: 3px;
+    z-index: 1000;
+}
+
+@media (max-width: 1200px) {
+    .instagram-pic2:hover:before {
+        padding: 2.11em;
+        width: 235px;
+        left: 250px;
+    }
+}
+
+@media (max-width: 991px) {
+    .instagram-pic2:hover:before {
+        background: none!important;
+        content: none;
+    }
+}
+
+.snapchat-pic3:hover:before {
+    font-family: FontAwesome;
+    content: "\f2ad";
+    font-size: 50px;
+    position: absolute;
+    width: 285px;
+    top: 0;
+    left: 585px;
+    white-space: nowrap;
+    background: rgba(241, 231, 103, 1);
+    background: -moz-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(241, 231, 103, 1)), color-stop(100%, rgba(252, 207, 70, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    background: linear-gradient(135deg, rgba(241, 231, 103, 1) 0%, rgba(252, 207, 70, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#fccf46', GradientType=1);
+    padding: 2.61em;
+    color: #FFF;
+    -moz-border-radius: 3px;
+    z-index: 1000;
+}
+
+@media (max-width: 1200px) {
+    .snapchat-pic3:hover:before {
+        padding: 2.11em;
+        width: 235px;
+        left: 485px;
+    }
+}
+
+@media (max-width: 991px) {
+    .snapchat-pic3:hover:before {
+        background: none!important;
+        content: none;
+    }
+}
+
+.instagram-pic4:hover:before {
+    font-family: FontAwesome;
+    content: "\f16d";
+    font-size: 50px;
+    position: absolute;
+    width: 285px;
+    top: 0;
+    left: 870px;
+    white-space: nowrap;
+    background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    -webkit-animation: animation 3.5s linear infinite;
+    -moz-animation: animation 3.5s linear infinite;
+    -ms-animation: animation 3.5s linear infinite;
+    -o-animation: animation 3.5s linear infinite;
+    animation: animation 3.5s linear infinite;
+    padding: 2.61em;
+    color: #FFF;
+    -moz-border-radius: 3px;
+    z-index: 1000;
+}
+
+@media (max-width: 1200px) {
+    .instagram-pic4:hover:before {
+        padding: 2.11em;
+        width: 235px;
+        left: 720px;
+    }
+}
+
+@media (max-width: 991px) {
+    .instagram-pic4:hover:before {
+        background: none!important;
+        content: none;
+    }
+}
+
+.icon-background5 {
+    color: #555;
+}
+
+.icon-background5:hover {
+    color: #555!important;
+}
+
+.circle-icon2 {
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.circle-icon {
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+
+/* code for animated blinking cursor */
+
+.typed-cursor {
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
