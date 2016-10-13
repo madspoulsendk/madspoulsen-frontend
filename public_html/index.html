@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Interaktiv legeplads brugt til CV  og Portfolio af Mads Poulsen, som er grafisk designer fra Midtjylland med speciale i logo, web og identitetsdesign.">
     <meta name="robots" content="all">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script>
     try {
@@ -23,17 +24,17 @@
     <div class="page-wrapper">
         <section class="intro" id="mp-intro">
             <header role="banner">
-                <h1>Mads Poulsen</h1>
+            <h1>Mads Poulsen</h1>
                 <h2>Welcome to my interactive playground</h2>
             </header>
             <div class="summary" id="mp-summary" role="article">
                 <p>My name is Mads and I'm a 25 year old Web Designer. I live in a small town called Ikast with my girlfriend. In my sparetime I use quite some time roasting, brewing and drinking coffee.
                     <br/>
-                    <br/> I focus on living in the present and try to improve myself on a mental level every day. Therefore I love long-distance running because the automatic focus on breathing gives me a meditation-like state. With that being said I always go the extra mile to win.</p>
             </div>
             <div class="preamble" id="mp-preamble" role="article">
                 <h3>Personally...</h3>
                 <p>I‘m a perky and comitted young guy who loves challenges. I‘m passionate, enthusiastic and focused. I‘m willing to learn and I have the right attitude. I am disciplined, independent and hard working.
+                <br/><br/> I focus on living in the present and try to improve myself on a mental level every day. Therefore I love long-distance running because the automatic focus on breathing gives me a meditation-like state. With that being said I always go the extra mile to win.
                     <br/>
                     <br/>That being said I‘m a team player. I bring laugther and joy to the team and priorities my relationship with colleague both duing and after work hours.</p>
                 <p>
@@ -44,6 +45,7 @@
                     <br/><span style="font-weight: bold;">- Ulrik Jepsen (BESTSELLER A/S)</span></p>
             </div>
         </section>
+
         <div class="main supporting" id="mp-supporting" role="main">
             <div class="explanation" id="mp-explanation" role="article">
                 <h3>To make a long story short</h3>
@@ -56,16 +58,87 @@
             </div>
             <div class="participation" id="mp-participation" role="article">
                 <h3>My previous job at <br/>Outfitters Nation & ADPT.</h3>
-                <p>At Bestseller I worked as a Textile Print Designer for a youth clothing brand. I was responsible for researching and choosing trends and colours for six annual collections, including creating designs. I also took part of presenting the collection to the European sales representives.</p>
+                <p>At Bestseller I worked as a Textile Print Designer for a youth clothing brand. I was responsible for researching and choosing trends and colours for six annual collections, including creating designs. I also took part of presenting the collection to the European sales representives.
+      <div class="video-container">
+                    <div id="ytplayer"></div>
+        </div>
+                </p>
             </div>
             <div class="outfitters" id="mp-outfitters" role="article">
                 <h2 class="quote">"</h2>
                 <p>No one ever said you had to wait to make your mark on the world. No one ever said that adults are the only ones who can change the way people see the world. It's only those who are true to themselves, the ones who dare to be different, who shape the future.</p>
             </div>
         </div>
+        <section class="intro" id="mp-intro">
+            <span class="visible-desktop">
+            <header1 role="banner">
+                <h4>&nbsp;</h4>
+            </header1>
+            </span>
+            <div class="footer" id="mp-summary" role="article">
+            
+            
+                <div class="social">
+<span class="fa-stack fa-1x">
+  <i class="fa fa-circle fa-stack-2x icon-background5"></i>
+  <a href="https://www.linkedin.com/in/madspoulsendk" target="_blank" style="color:#0D2C40"><i class="fa fa-linkedin fa-stack-1x"></i></a>
+</span>
+<span class="fa-stack fa-1x">
+  <i class="fa fa-circle fa-stack-2x icon-background5"></i>
+  <a href="https://www.instagram.com/madspoulsendk/" target="_blank" style="color:#0D2C40"><i class="fa fa-instagram fa-stack-1x"></i></a>
+</span>
+<span class="fa-stack fa-1x">
+  <i class="fa fa-circle fa-stack-2x icon-background5"></i>
+  <a href="https://www.facebook.com/madspoulsendk" target="_blank" style="color:#0D2C40"><i class="fa fa-facebook fa-stack-1x"></i></a>
+</span>
+<span class="fa-stack fa-1x">
+  <i class="fa fa-circle fa-stack-2x icon-background5"></i>
+  <a href="https://twitter.com/madspoulsendk" target="_blank" style="color:#0D2C40"><i class="fa fa-twitter fa-stack-1x"></i></a>
+</span>
+                </div>
+            </div>
+        </section>
     </div>
     </aside>
     </div>
 </body>
+<script>
+// Loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+  // Replaces the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+        height: '390',
+        width: '640',
+        videoId: 'XddmFA8GS_I',
+        playerVars: {
+          autoplay: 1,
+          controls: 0,
+          disablekb: 1,
+          hl: 'ru-ru',
+          loop: 1,
+          modestbranding: 1,
+          showinfo: 0,
+          autohide: 1,
+          color: 'white',
+          iv_load_policy: 3,
+          theme: 'light',
+          rel: 0
+        },
+        events: {
+            'onReady': onPlayerReady,
+        }
+    });
+  }
+
+function onPlayerReady(event){
+    player.mute();
+}
+</script>
 </html>

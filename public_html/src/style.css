@@ -1,20 +1,84 @@
-/* css Zen Garden submission 221 - 'Mid Century Modern', by Andrew Lohman, http://www.andrewlohman.com/  */
+.social {
+    z-index: 9;
+    position: relative;
+    left: -16em;
+    top: 2em;
+}
+@media (max-width: 70em) {
+.social {
+    z-index: 9;
+    position: relative;
+    left: 0;
+    top: 3em;
+    text-align: center;
+}
+}
 
+@media (min-width: 848px) and (max-width: 991px) {
+.social {
+    z-index: 9;
+    position: relative;
+    left: 0;
+    top: 13em;
+    text-align: center;
+}
+}
 
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+.video-container {
+    position: relative;
+    z-index: 2;
+    top: 7em;
+    left: 0;
+}
 
+@media (max-width: 1200px) {
+    .video-container {
+        top: 0.6em;
+        left: 0;
+    }
+}
 
-/* TYPEKIT_KIT_ID: vzq4ipz */
+@media (max-width: 991px) {
+    .video-container {
+        top: 4em;
+        left: 0;
+    }
+}
 
+@media (max-width: 849px) {
+    .video-container {
+        display: none;
+    }
+}
 
-/* 
-==========================================================================
-Reset
-==========================================================================
-*/
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 577px;
+    height: 325px;
+}
 
+@media (max-width: 1200px) {
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        width: 387px;
+        height: 218px;
+    }
+}
 
-/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+@media (max-width: 991px) {
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        width: 625px;
+        height: 352px;
+    }
+}
+
 
 article,
 aside,
@@ -290,7 +354,7 @@ Intro
 
 .intro header {
     position: relative;
-    background: #1DB1BF;
+    background: #0d2c40 url(/images/icon-webdesign.svg);
     overflow: hidden;
     width: 40%;
     height: 50em;
@@ -316,13 +380,43 @@ Intro
     }
 }
 
+.intro header1 {
+    position: relative;
+    background: #0d2c40;
+    overflow: hidden;
+    width: 40%;
+    height: 30em;
+    float: left;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 70em) {
+    .intro header1 {
+        background: #6C3B56;
+        width: 100%;
+        height: 27em;
+    }
+}
+
+@media (max-width: 53em) {
+    .intro header1 {
+        height: 20em;
+    }
+}
+
+
 .intro header h1 {
     position: absolute;
     color: #ffffff;
     font-size: 100%;
     line-height: 2em;
-    top: 4.2em;
-    left: -3em;
+    top: 8.7em;
+    left: -2.5em;
+    z-index: 1;
     width: auto;
     margin: 0;
     padding: 1em;
@@ -344,10 +438,50 @@ Intro
     color: #ffffff;
     font-size: 250%;
     line-height: 1.25em;
-    width: 50%;
+    width: 100%;
     height: 20.019em;
     margin: 0 0 0 0;
-    padding: 6em 0.5em 0 0.5em;
+    padding: 3em 0.5em 0 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.intro header h4 {
+    position: relative;
+    background: rgba(29, 177, 191, 0.8);
+    background-size: 101%;
+    float: right;
+    color: #ffffff;
+    font-size: 250%;
+    line-height: 1.25em;
+    width: 100%;
+    height: 20.019em;
+    margin: 0 0 0 0;
+    padding: 3em 0.5em 0 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 70em) {
+.visible-desktop {
+    display: none;
+}
+}
+
+.intro .summary {
+    font-size: 100%;
+    color: #ffffff;
+    width: 60%;
+    float: left;
+    background: rgba(29, 177, 191, 0.8);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 101%;
+    height: 50em;
+    margin: 0;
+    padding: 16.3em 2em 10em 2em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -374,12 +508,65 @@ Intro
     }
 }
 
+.intro .footer {
+    font-size: 100%;
+    color: #ffffff;
+    width: 60%;
+    float: left;
+    background: #0d2c40;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 101%;
+    height: 30em;
+    margin: 0;
+    padding: 16.3em 2em 10em 2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 70em) {
+    .intro .footer {
+        width: 100%;
+        height: auto;
+        padding: 2em 1em 37% 1em;
+    }
+}
+
+.intro .footer p {
+    padding: 0 70% 2em 0;
+    margin: 0;
+}
+
+@media (max-width: 70em) {
+    .intro .footer p {
+        padding: 0 0 1em 35%;
+    }
+}
+
+@media (max-width: 53em) {
+    .intro .footer p {
+        padding: 0 0 1em 0;
+    }
+}
+
+.intro .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+.intro .footer a:hover {
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
 .intro .summary {
     font-size: 100%;
     color: #ffffff;
     width: 60%;
     float: left;
-    background: #1DB1BF url(/images/icon_competencies.svg);
+    background: rgba(29, 177, 191, 0.8) url(/images/icon_competencies.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 101%;
@@ -400,7 +587,7 @@ Intro
 }
 
 .intro .summary p {
-    padding: 0 40% 2em 0;
+    padding: 0 70% 2em 0;
     margin: 0;
 }
 
@@ -480,12 +667,12 @@ Intro
     position: absolute;
     z-index: 2;
     color: #ffffff;
-    background: rgba(108, 59, 86, 0.8);
+    background: rgba(13, 44, 64, 0.8);
     width: 24.95%;
     top: -1em;
     right: 0;
     margin-right: 0;
-    padding: 10em 1em 7.4em 1em;
+    padding: 12em 1em 13em 1em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -493,7 +680,7 @@ Intro
 
 @media (min-width: 190em) {
     .intro .preamble p:last-child {
-        background: rgba(108, 59, 86, 0.8);
+        background: rgba(13, 44, 64, 0.8);
         width: 33.250%;
         padding: 6em 1em 9em 1em;
     }
@@ -501,9 +688,9 @@ Intro
 
 @media (max-width: 70em) {
     .intro .preamble p:last-child {
-        background: rgba(108, 59, 86, 0.8);
+        background: rgba(13, 44, 64, 0.8);
         width: 33.250%;
-        padding: 6em 1em 4.6em 1em;
+        padding: 6.5em 1em 10em 1em;
     }
 }
 
@@ -690,12 +877,14 @@ Main
         margin-top: 6em;
         width: 66.866%;
         right: 33.200%;
+        padding: 2em 4em;
     }
 }
 
 @media (max-width: 53em) {
     .main .participation {
         position: relative;
+        padding: 1em 1em;
         margin-top: 0;
         width: 100%;
         right: 0;
@@ -707,7 +896,7 @@ Main
 }
 
 .main .outfitters {
-    background: rgba(108, 59, 86, 0.8) url(icon-circles.svg) no-repeat left top;
+    background: rgba(247, 210, 72, 0.8) url(icon-circles.svg) no-repeat left top;
     background-size: 100%;
     position: absolute;
     right: 20%;
@@ -719,7 +908,7 @@ Main
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: #fff;
+    color: #000;
 }
 
 @media (max-width: 70em) {
@@ -728,24 +917,26 @@ Main
         width: 33.250%;
         margin-top: 6em;
         padding: 5.5em 1em 24em 1em;
+        bottom: -20px;
     }
 }
 
 @media (max-width: 53em) {
     .main .outfitters {
-        background: rgba(108, 59, 86, 0.8) url(icon-circles.svg) no-repeat center top;
+        background: #47BDC8 url(icon-circles.svg) no-repeat center top;
         background-size: 33%;
         position: relative;
         right: 0;
         width: 100%;
         margin-top: 0;
         padding: 11em 1em 4em 1em;
+        color: #fff;
     }
 }
 
 @media (max-width: 33em) {
     .main .outfitters {
-        background: rgba(108, 59, 86, 0.8) url(icon-circles.svg) no-repeat center top;
+        background: #47BDC8 url(icon-circles.svg) no-repeat center top;
         background-size: 33%;
         position: relative;
         right: 0;
