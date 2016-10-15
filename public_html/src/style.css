@@ -680,7 +680,7 @@ Intro
 
 @media (min-width: 190em) {
     .intro .preamble p:last-child {
-        background: rgba(13, 44, 64, 0.8);
+        background: rgba(13, 44, 64, 1);
         width: 33.250%;
         padding: 6em 1em 9em 1em;
     }
@@ -688,7 +688,7 @@ Intro
 
 @media (max-width: 70em) {
     .intro .preamble p:last-child {
-        background: rgba(13, 44, 64, 0.8);
+        background: rgba(13, 44, 64, 1);
         width: 33.250%;
         padding: 6.5em 1em 10em 1em;
     }
@@ -713,7 +713,7 @@ Main
 */
 
 .main {
-    background: url(/images/co3-miljoe-3.jpg) no-repeat center center;
+    background: url(/images/mp-big-background.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -776,7 +776,7 @@ Main
 }
 
 .main .explanation {
-    background: #0d2c40 url(icon-half.svg);
+    background: #0d2c40;
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 40%;
@@ -792,8 +792,10 @@ Main
 
 @media (max-width: 70em) {
     .main .explanation {
+        background: rgba(13, 44, 64, 0.8);
         width: 66.666%;
         margin: 0;
+        top:-46px;
     }
 }
 
@@ -916,8 +918,8 @@ Main
         right: 0;
         width: 33.250%;
         margin-top: 6em;
-        padding: 5.5em 1em 24em 1em;
-        bottom: -20px;
+        padding: 15.4em 1em 24em 1em;
+        bottom: 0;
     }
 }
 
@@ -1505,6 +1507,12 @@ Sidebar
 
 @media (max-width: 849px) {
     .visible-desktop {
+    display: none;
+}
+}
+
+@media (min-width: 1120px) {
+    .hidden-desktop {
     display: none;
 }
 }
